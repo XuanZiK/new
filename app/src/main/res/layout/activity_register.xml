@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/registerUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerUsernameEditText"
+        android:layout_marginTop="8dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/registerAgeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPasswordEditText"
+        android:layout_marginTop="8dp"
+        android:hint="请输入年龄"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/registerPhoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerAgeEditText"
+        android:layout_marginTop="8dp"
+        android:hint="请输入手机号码"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/confirmRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPhoneNumberEditText"
+        android:layout_marginTop="16dp"
+        android:text="确认注册"/>
+</RelativeLayout>
