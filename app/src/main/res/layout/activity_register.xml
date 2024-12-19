@@ -7,13 +7,30 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="@drawable/register"
     tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="WELCOME"
+        android:textSize="60sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/registerUsernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_marginTop="8dp"
         android:hint="请输入用户名"
+        android:textColorHint="#4A4A4A"
+        android:textColor="#4A4A4A"
         android:minHeight="48dp" />
 
     <EditText
@@ -24,6 +41,8 @@
         android:layout_marginTop="8dp"
         android:hint="请输入密码"
         android:inputType="textPassword"
+        android:textColorHint="#4A4A4A"
+        android:textColor="#4A4A4A"
         android:minHeight="48dp" />
 
     <EditText
@@ -33,6 +52,8 @@
         android:layout_below="@id/registerPasswordEditText"
         android:layout_marginTop="8dp"
         android:hint="请输入年龄"
+        android:textColorHint="#4A4A4A"
+        android:textColor="#4A4A4A"
         android:minHeight="48dp" />
 
     <EditText
@@ -42,13 +63,18 @@
         android:layout_below="@id/registerAgeEditText"
         android:layout_marginTop="8dp"
         android:hint="请输入手机号码"
+        android:textColorHint="#4A4A4A"
+        android:textColor="#4A4A4A"
         android:minHeight="48dp" />
 
     <Button
         android:id="@+id/confirmRegisterButton"
+        style="@style/Widget.App.Button.Green"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/registerPhoneNumberEditText"
         android:layout_marginTop="16dp"
-        android:text="确认注册"/>
+        android:text="完成注册并登录"
+        android:textColorHint="#4A4A4A"
+        android:textColor="#4A4A4A"/>
 </RelativeLayout>

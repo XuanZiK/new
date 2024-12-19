@@ -46,4 +46,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("mysql:mysql-connector-java:5.1.47")
+    implementation ("com.google.android.material:material:1.4.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.0")
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }

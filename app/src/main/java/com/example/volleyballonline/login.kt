@@ -20,6 +20,7 @@ class login : AppCompatActivity() {
         val passwordEditText: EditText = findViewById(R.id.passwordEditText)
         val loginButton: Button = findViewById(R.id.loginButton)
         val registerButton: Button = findViewById(R.id.registerButton)
+        val username1 = usernameEditText.text.toString()
 
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
